@@ -34,9 +34,9 @@ int main()
 	"</body>"
 	"</html>";
 	char header[200] =	
-			"HTTP/1.0 200 OK\n"
-			"Content-type: text/html\n"
-			"\n";
+	"HTTP/1.0 200 OK\n"
+	"Content-type: text/html\n"
+	"\n";
  
 	write(client_socket, header, strlen(header));
 	write(client_socket, html, strlen(html));
